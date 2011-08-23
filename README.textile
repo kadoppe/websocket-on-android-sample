@@ -1,0 +1,27 @@
+h1. 構成
+
+* web_chat_server: Node.js + Node WebSocket Serverを使って開発したチャットサーバ
+* android_chat_client: weberknechtを使って開発したAndroid用チャットクライアント
+
+h1. チャットサーバ
+
+動作確認は「Node.js v0.4.10」「 Google Chrome 13」で行っています。
+
+h2. インストール
+<pre>
+$ cd web_chat_server
+$ npm install
+</pre>
+
+h2. 起動
+<pre>
+$ node app.js
+</pre>
+
+サーバ起動後はブラウザから「http://localhost/chat.html」にアクセスすることで動作を確認できます。
+
+h2. Android用チャットクライアント
+
+Eclipseのプロジェクトになっています。「Android 2.3.3」環境で動作確認済みです。
+
+ソースコード中にサーバのIPアドレスを入力する場所がありますので、プロジェクトインポート後、各自修正してからビルドしてください。
